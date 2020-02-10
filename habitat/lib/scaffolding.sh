@@ -129,7 +129,7 @@ do_install() {
     "$PLAN_CONTEXT/../" "$pkg_prefix/"
   mkdir --parents "$pkg_prefix/hooks/"  # TODO: find a cleaner way to inherit templates
   cp --interactive --verbose --preserve --recursive \
-    $(hab pkg path "smartb/scaffolding-flask")/hooks/* "$pkg_prefix/hooks/"
+    $(hab pkg path "bixu/scaffolding-flask")/hooks/* "$pkg_prefix/hooks/"
   return $?
 }
 
